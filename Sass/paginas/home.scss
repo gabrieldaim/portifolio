@@ -1,0 +1,181 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.principal{
+    width: 100%;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    justify-content: center    
+}
+
+.principal-esquerda{
+    width: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 70%;
+        max-width: 600px;
+    }
+}
+
+.principal-direita{
+    width: 50%;
+
+     .h1{
+        font-size: 100px;
+        color: $verde-agua;
+        font-weight: 700;
+     }
+     .h2{
+        font-size: 30px;
+        font-weight: 300;
+        color: $azul-claro;
+     }
+
+     .card-prog{
+        width: 400px;
+        height: 250px;
+        background-image: $card;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        padding: 25px;
+        gap: 10px;
+
+        .comentario{
+            padding-bottom: 20px;
+            font-style: italic;
+            font-family: jetbrains mono;
+            font-weight: 200;
+            color: $cinza;
+        }
+        .continua{
+            display: flex;
+            gap: 5px;
+         }
+
+         .chaves{
+            color: white;
+            font-family: jetbrains mono;
+         }
+
+
+        .funcao{
+            font-family: jetbrains mono;
+            color: $funcao;
+        }
+
+        .texto-card-1{
+            color: white;
+            font-family: jetbrains mono;
+            padding-left: 25px;
+        }
+
+        .texto-card-2{
+            color: $azul-claro;
+            font-family: jetbrains mono;
+
+        }
+
+
+     }
+
+     .card1{
+        margin: 25px 50px;
+        display: flex;
+        
+     }
+
+     .card2{
+        margin: 0 300px;
+     }
+
+
+
+}
+
+.sobre{
+    padding: 20px;
+}
+
+
+
+
+
+@media (max-width:1440px) {
+    .principal-direita{
+        .card2{
+            margin: 0 300px;
+        }
+    }
+
+
+}
+
+@media (max-width:1024px) {
+    .principal-direita{
+        .card2{
+            margin: 0 100px;
+        }
+    }
+
+
+}
+
+@media (max-width:425px) {
+
+
+    .principal-esquerda{
+        display: none;
+    }
+
+    .principal-direita{
+        padding:0 25px ;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        
+        .h1{
+            text-align: center;
+        }
+        .h2{
+            text-align: center;
+        }
+        .card1{
+            font-size: 14px;
+            margin: 20px;
+            width: 90%;
+            height: auto;
+        }
+
+        .card2{
+            font-size: 14px;
+            margin: 0 20px;
+            width: 90%;
+            height: auto;
+        }
+    }
+    
+
+
+}
+
+@media (max-width:375px) {
+    .principal-direita{
+        .card2{
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+
+}
+
+
