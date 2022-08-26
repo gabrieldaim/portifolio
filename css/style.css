@@ -100,5 +100,10 @@ body {
     transform: translateY(20px);
   }
 }
+@media (max-height: 765px) {
+  .botton-home {
+    top: 80vh;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
