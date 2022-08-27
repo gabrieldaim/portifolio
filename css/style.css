@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: rgb(26, 26, 26);
-  color: #eee;
-}
-
 .container {
   height: 100vh;
   display: flex;
@@ -73,7 +61,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   position: absolute;
   top: 85vh;
 }
@@ -86,10 +74,15 @@ body {
 
 .social a img {
   width: 45px;
+  transition: 0.5s;
+}
+
+.social a img:hover {
+  transform: scale(1.3);
 }
 
 .seta {
-  animation: seta 1s infinite alternate;
+  animation: seta 1s ease infinite alternate;
 }
 
 @keyframes seta {
@@ -102,8 +95,206 @@ body {
 }
 @media (max-height: 765px) {
   .botton-home {
-    top: 80vh;
+    top: 75vh;
   }
+}
+.sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.sobre .p-normal {
+  border: none;
+  max-width: 50vw;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.btn {
+  border: solid 2px #35ccc4;
+  background-color: #35ccc4;
+  color: rgb(26, 26, 26);
+  font-size: 20px;
+  padding: 10px 35px;
+  border-radius: 100px;
+  font-weight: bold;
+  transition: 0.5s;
+  box-shadow: 0 0 1em black;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+  background-color: rgb(26, 26, 26);
+  color: #eee;
+}
+
+.conhecimentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card1 {
+  width: 325px;
+  height: 400px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 1em black;
+  border-radius: 50px;
+  padding-top: 20px;
+  color: rgb(26, 26, 26);
+}
+.card1 .icon {
+  width: 85px;
+}
+
+.card2 {
+  width: 325px;
+  height: 400px;
+  background-color: #35ccc4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 1em black;
+  border-radius: 50px;
+  padding-top: 20px;
+  color: rgb(26, 26, 26);
+}
+.card2 .icon {
+  width: 85px;
+}
+.card2 .secondbg {
+  background-color: #eee;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px 0px 50px 50px;
+}
+.card2 .secondbg .p-card {
+  width: 325px;
+}
+
+.card3 {
+  width: 325px;
+  height: 400px;
+  background-color: #35ccc4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 1em black;
+  border-radius: 50px;
+  padding-top: 20px;
+  color: rgb(26, 26, 26);
+}
+.card3 .icon {
+  width: 85px;
+}
+.card3 .secondbg {
+  background-color: #eee;
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.card3 .secondbg .p-card {
+  width: 325px;
+}
+
+.card {
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(26, 26, 26);
+  color: #eee;
+}
+
+.container-pai {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1 {
+  color: #35ccc4;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-top: 90px;
+}
+
+.h2 {
+  color: rgb(26, 26, 26);
+  font-weight: 900;
+  font-size: 2rem;
+  margin-top: 10PX;
+}
+
+.h22 {
+  color: rgb(26, 26, 26);
+  font-weight: 900;
+  font-size: 2rem;
+  margin-top: 10PX;
+}
+
+.p-normal {
+  font-weight: 900;
+  font-size: 20px;
+  max-width: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.p-card {
+  height: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(26, 26, 26);
+  padding: 10px 25px;
+}
+
+.destaque {
+  color: #35ccc4;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
